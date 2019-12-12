@@ -57,3 +57,47 @@ html, body {
     height: 100%;
 }
 
+
+/*   ======   Starting Here   ======   */
+
+.wrapper {
+
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+
+	@media (max-width: 767px){
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	@media (max-width: 650px){
+		width: 100%;
+		margin: 0;
+	}
+
+}//closes the wrapper
+
+header {
+	nav {
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-decoration: none;
+
+		@media (max-width: 767px) {
+			justify-content: space-around;
+		}
+
+		@media (max-width: 650px) {
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			width:100%;
+		}
+
+	} // closes nav
+
+
+} // closes header
