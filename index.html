@@ -3,10 +3,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>My Resume</title>
+  <title>Michael Walter | Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,7 +16,6 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
   <div class="wrapper">
 
     <header>
@@ -29,16 +30,16 @@
     <main>
       <section class="top-sect">
         <div>
-          <div><img src="" alt="Picture of Michael Walter"></div>
+          <div><img src="images/img4.jpeg" alt="Picture of Michael Walter"></div>
           <div>
-            <h1>Michael Walter - Web Dev</h1>
-            <p>Development is my game!</p>
+            <h1 class="myName">Michael Walter - Web Dev</h1>
+            <p class="tagline">Development is my game!</p>
           </div>
         </div>
 
         <div>
-            <p>Based in Southern California and open to collaborations.</p>
-            <p class="button">Work Together</p>  
+            <p class="based">Based in Southern California and open to collaborations.</p>
+            <!--<p class="button">Work Together</p>  -->
         </div>
       </section>
 
@@ -48,8 +49,8 @@
             <h2>A Bit About Me</h2>
             <p>I've had an interest in technology since an early age, but not in development. My first interest was in security and I competed in competitions for it. Later my interests in computer science widened and I became interested in programming and taught myself C++ along with the basics of Python, JavaScript, C# and MySQL. With these accomplishments I decided to return to College and work towards my degree in computer science, but quickly found that the curriculum mnoved too slow. Upon realizing this I began researching a program I had heard of previously, Lambda School, after completing my research I found that if was the better choice for me. So I applied and was accepted after completed several challenges In the two weeks before attending Lambda I taught myself HTML and CSS in addition to reviewing JavaScript. I'm a self starter and I'm intensely driven.</p>
           </div>
-          <div>
-            <h3>Personal Hobbies:</h3>
+          <div class="hobbies">
+            <h3>Personal Hobbies</h3>
             <ul>
               <li>Learning Chinese / 当然我会说中文</li>
               <li>Learning Russian / currently very basic</li>
@@ -59,34 +60,34 @@
           </div>
         </div>
 
-        <div>
+        <div class="work">
           <h3>Work History</h3>
-          <table>
-            <tr>
-              <th>Yrs</th>
-              <th>Company</th>
-              <th>Title</th>
-              <th>Tech Used</th>
-            </tr>
-            <tr class = "row-grey">
-                <td class="year-col">0 > 1</td>
-                <td class="company-col">Lambda School</td>
-                <td class="title-col">Full-Stack Development Student</td>
-                <td class="tech-col">Several, Ask for Info</td>
-              </tr>
-              <tr>
-                  <td class="year-col">1+</td>
-                  <td class="company-col">College</td>
-                  <td class="title-col">Computer Science Student</td>
-                  <td class="tech-col">C++, Cisco, much more.</td>
-                </tr>
-              <tr class = "row-grey">
-                  <td class="year-col">2+</td>
-                  <td class="company-col">Self-Employed</td>
-                  <td class="title-col">Professional Photographer</td>
-                  <td class="tech-col">All forms of cameras and editors, video and image</td>
-              </tr>    
-          </table>
+          <div>
+            <div class="t-row">
+              <p class="t-head">Yrs</p>
+              <p class="t-head">Company</p>
+              <p class="t-head">Title</p>
+              <p class="t-head">Tect Used</p>
+            </div>
+            <div class="t-row">
+              <p>>1</p>
+              <p>Lambda School</p>
+              <p>Full-Stack Development<br> Student</p>
+              <p>Several, Please ask</p>
+            </div>
+            <div class="t-row">
+              <p>1+</p>
+              <p>College</p>
+              <p>Computer Science<br> Student</p>
+              <p>Several, Please ask</p>
+            </div>
+            <div class="t-row">
+              <p>2+</p>
+              <p>Self-Employed</p>
+              <p>Photographer</p>
+              <p>Several, Please ask</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>

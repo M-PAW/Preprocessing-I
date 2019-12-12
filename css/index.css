@@ -135,6 +135,9 @@ body {
   height: 100%;
 }
 /*   ======   Starting Here   ======   */
+* {
+  font-family: 'Sulphur Point', sans-serif;
+}
 .wrapper {
   width: 90%;
   max-width: 1000px;
@@ -156,7 +159,12 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 2%;
+  padding-bottom: 3.5%;
+}
+header nav a {
   text-decoration: none;
+  color: gray;
 }
 @media (max-width: 767px) {
   header nav {
@@ -168,6 +176,100 @@ header nav {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    margin: 2%;
   }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 0;
+}
+main section {
+  padding-bottom: 5%;
+}
+main p {
+  line-height: 1.3em;
+}
+main .top-sect img {
+  width: 40%;
+  margin: 0 30%;
+}
+main .top-sect .myName {
+  font-size: 170%;
+  text-align: center;
+}
+main .top-sect .tagline {
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+}
+main .top-sect .based {
+  text-align: center;
+  padding-top: 2.2%;
+}
+main .top-sect .button {
+  border: 1px solid black;
+  background-color: green;
+  padding: 2% 1%;
+}
+main .bottom-sect {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main .bottom-sect div {
+  width: 100%;
+  padding-bottom: 3%;
+}
+main .bottom-sect h2 {
+  font-size: 140%;
+  font-weight: bold;
+  padding: 1.15%;
+  margin-bottom: 2.5%;
+  border-bottom: 2.5px solid black;
+  width: 24%;
+}
+main .bottom-sect .hobbies {
+  margin: 0 auto;
+}
+main .bottom-sect .hobbies h3 {
+  font-size: 120%;
+  font-weight: bold;
+  padding: 1.15%;
+  margin-bottom: 2.5%;
+  border-bottom: 2.5px solid black;
+  width: 23%;
+}
+main .bottom-sect .hobbies p {
+  line-height: 1.2;
+}
+main .bottom-sect .work h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 2.5%;
+  padding: 1.5%;
+  border-bottom: 2.5px solid black;
+  width: 18%;
+}
+main .bottom-sect .work div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+main .bottom-sect .work .t-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+main .bottom-sect .work .t-row p {
+  padding-bottom: 1%;
+  border-bottom: 1px solid grey;
+}
+main .bottom-sect .work .t-row .t-head {
+  line-height: 1.7rem;
 }
