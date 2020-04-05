@@ -3,10 +3,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>My Resume</title>
+  <title>Michael Walter | Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +16,111 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+
+    <header>
+    <nav>
+      <a href=#>Home</a>
+      <a href=#>About</a>
+      <a href=#>Portfolio</a>
+      <a href=#>Contact</a>
+    </nav>
+  </header>
+  <div class="wrapper">
+
+    <main>
+      <section class="top-sect">
+        <div>
+          <div class="profile"><img src="images/img4.jpeg" alt="Picture of Michael Walter"></div>
+          <div class="image-text">
+            <h1 class="nameTag">Michael Walter - Web Dev</h1>
+            <p class="based">Based in Southern California and open to collaborations.</p>
+          </div>
+        </div>
+
+        <div>
+            <p class="tagline">Development is my game!</p>
+            <!--<p class="button">Work Together</p>  -->
+        </div>
+      </section>
+
+      <section class="bottom-sect">
+        <div>
+          <div class="about-me">
+            <h2>A Bit About Me</h2>
+            <p><span>I've </span>had an interest in technology since an early age, but not in development. My first interest was in security and I competed in competitions for it. Later my interests in computer science widened and I became interested in programming and taught myself C++ along with the basics of Python, JavaScript, C# and MySQL. With these accomplishments I decided to return to College and work towards my degree in computer science, but quickly found that the curriculum mnoved too slow. Upon realizing this I began researching a program I had heard of previously, Lambda School, after completing my research I found that if was the better choice for me. So I applied and was accepted after completed several challenges In the two weeks before attending Lambda I taught myself HTML and CSS in addition to reviewing JavaScript. I'm a self starter and I'm intensely driven.</p>
+          </div>
+          <div class="talents">
+            <div class="skills">
+              <h3>Skills</h3>
+              <ul>
+                <li>Web Development</li>
+                <li>Cisco IOS</li>
+                <li>Digital Imaging</li>
+                <li>Basic Systems Administration</li>
+              </ul>
+            </div>
+            <div class="hobbies">
+              <h3>Personal Hobbies</h3>
+              <ul>
+                <li>Learning Chinese / 当然我会说中文</li>
+                <li>Learning Russian / currently very basic</li>
+                <li>Professional Photography</li>
+                <li>Programming, my favorite languages are C based</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="work">
+          <h3>Work History</h3>
+          <div>
+            <div class="t-row">
+              <p class="t-head">Yrs</p>
+              <p class="t-head">Company</p>
+              <p class="t-head">Title</p>
+              <p class="t-head">Tect Used</p>
+            </div>
+            <div class="t-row">
+              <p>>1</p>
+              <p>Lambda School</p>
+              <p>Full-Stack Development<br> Student</p>
+              <p>Several, Please ask</p>
+            </div>
+            <div class="t-row">
+              <p>1+</p>
+              <p>College</p>
+              <p>Computer Science<br> Student</p>
+              <p>Several, Please ask</p>
+            </div>
+            <div class="t-row">
+              <p>2+</p>
+              <p>Self-Employed</p>
+              <p>Photographer</p>
+              <p>Several, Please ask</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact">
+            <p>Contact me:</p>
+            <form>
+              <input type="email" name="email" placeholder="Email..">
+              <select name="reason" size="1">
+                  <option value="_nuill">Purpose..</option>
+                  <option value="project">Project</option>
+                  <option value="collab">Collaboration</option>
+                </select>
+                <button value="submit" onclick="alert('Submit Failed!')">Submit</button>
+            </form>
+          </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <footer>
+
+  </footer>
+
 </body>
 </html>

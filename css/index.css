@@ -1,1 +1,394 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+/*   ======   Starting Here   ======   */
+* {
+  font-family: 'Sulphur Point', sans-serif;
+}
+.section-style {
+  font-size: 1.6vw;
+  padding: 0 0 4% 2%;
+  width: 90%;
+}
+.section-style-mobile {
+  font-size: 3.2vw;
+  padding: 0 0 4% 2%;
+  width: 100%;
+}
+.bold-2vw {
+  font-size: 2vw;
+  font-weight: bold;
+}
+header {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid gray;
+  }
+}
+header nav a {
+  padding: 3%;
+  text-decoration: none;
+  color: gray;
+  font-size: 1.6rem;
+}
+header nav a:hover {
+  color: red;
+}
+.wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .wrapper {
+    font-size: 6.4vw;
+    width: 100%;
+  }
+}
+.wrapper .top-sect {
+  padding: 4% 3%;
+  width: 100%;
+}
+.wrapper .top-sect .profile {
+  width: 60%;
+  border-radius: 30px;
+}
+.wrapper .top-sect .profile img {
+  width: 100%;
+}
+.wrapper .top-sect .nameTag {
+  font-size: 3.2vw;
+  font-weight: bold;
+  text-align: left;
+  padding: 1% 0 0.5% 3.5%;
+  width: 60%;
+}
+.wrapper .top-sect .tagline {
+  font-size: 2.2vw;
+  padding: 0 0.75%;
+  text-align: left;
+  padding-left: 11%;
+}
+.wrapper .top-sect .based {
+  font-size: 1.5vw;
+  padding-left: 3%;
+}
+.wrapper .top-sect .image-text {
+  width: 100%;
+  text-align: left;
+}
+.wrapper .top-sect div {
+  width: 100%;
+}
+.wrapper .bottom-sect {
+  padding: 4% 3%;
+  width: 100%;
+}
+.wrapper .bottom-sect .about-me {
+  font-size: 1.6vw;
+  padding: 0 0 4% 2%;
+  width: 90%;
+}
+@media (max-width: 480px) {
+  .wrapper .bottom-sect .about-me {
+    font-size: 3.2vw;
+    padding: 0 0 4% 2%;
+    width: 100%;
+  }
+}
+.wrapper .bottom-sect .about-me h2 {
+  font-size: 2vw;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  width: 24%;
+  padding: 0.2% 1%;
+  margin-bottom: 1.5%;
+}
+@media (max-width: 480px) {
+  .wrapper .bottom-sect .about-me h2 {
+    font-size: 3.2vw;
+    padding: 0 0 4% 2%;
+    width: 100%;
+  }
+}
+.wrapper .bottom-sect .about-me p {
+  padding-left: 0.5%;
+  line-height: 2.1vh;
+}
+.wrapper .bottom-sect .about-me p span {
+  padding-left: 4%;
+}
+@media (max-width: 480px) {
+  .wrapper .bottom-sect .about-me p span {
+    font-size: 3.2vw;
+    padding: 0 0 4% 2%;
+    width: 100%;
+  }
+}
+.wrapper .bottom-sect .talents {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.wrapper .bottom-sect .talents .skills {
+  font-size: 1.6vw;
+  padding: 0 0 4% 2%;
+  width: 90%;
+}
+.wrapper .bottom-sect .talents .skills h3 {
+  font-size: 2vw;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  width: 26%;
+  padding: 0.2% 1%;
+  margin-bottom: 2%;
+}
+@media (max-width: 480px) {
+  .wrapper .bottom-sect .talents .skills h3 {
+    font-size: 3.2vw;
+    padding: 0 0 4% 2%;
+    width: 100%;
+  }
+}
+.wrapper .bottom-sect .talents .skills li {
+  line-height: 1.6vh;
+  padding-bottom: 1%;
+}
+@media (max-width: 480px) {
+  .wrapper .bottom-sect .talents .skills li {
+    font-size: 3.2vw;
+    padding: 0 0 4% 2%;
+    width: 100%;
+  }
+}
+.wrapper .bottom-sect .talents .hobbies {
+  font-size: 1.6vw;
+  padding: 0 0 4% 2%;
+  width: 90%;
+}
+.wrapper .bottom-sect .talents .hobbies h3 {
+  font-size: 2vw;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  width: 32%;
+  padding: 0.2% 1%;
+  margin-bottom: 2%;
+}
+@media (max-width: 480px) {
+  .wrapper .bottom-sect .talents .hobbies h3 {
+    font-size: 3.2vw;
+    padding: 0 0 4% 2%;
+    width: 100%;
+  }
+}
+.wrapper .bottom-sect .talents .hobbies li {
+  line-height: 1.6vh;
+  padding-bottom: 1%;
+}
+@media (max-width: 480px) {
+  .wrapper .bottom-sect .talents .hobbies li {
+    font-size: 3.2vw;
+    padding: 0 0 4% 2%;
+    width: 100%;
+    line-height: 2.1vh;
+  }
+}
+.wrapper .bottom-sect .work {
+  font-size: 1.6vw;
+  padding: 0 0 4% 2%;
+  width: 90%;
+}
+.wrapper .bottom-sect .work h3 {
+  font-size: 2vw;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  width: 20%;
+  padding: 0.2% 1%;
+  margin-bottom: 2%;
+}
+@media (max-width: 480px) {
+  .wrapper .bottom-sect .work h3 {
+    font-size: 3.2vw;
+    padding: 0 0 4% 2%;
+    width: 100%;
+  }
+}
+.wrapper .bottom-sect .work div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .bottom-sect .work .t-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.wrapper .bottom-sect .work .t-row p {
+  line-height: 1.8vh;
+  padding-bottom: 0.5%;
+}
+@media (max-width: 480px) {
+  .wrapper .bottom-sect .work .t-row p {
+    font-size: 3.2vw;
+    padding: 0 0 4% 2%;
+    width: 100%;
+  }
+}
+.wrapper .bottom-sect .work .t-row .t-head {
+  line-height: 2.4vh;
+}
+.wrapper .bottom-sect .contact {
+  width: 100%;
+  margin-left: height: 50px;
+  background-color: gray;
+  font-size: 1.8vw;
+  padding: 10px 15px 15px 15px;
+}
